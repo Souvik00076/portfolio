@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Menu, ChevronLeft, SidebarCloseIcon, CircleX } from "lucide-react"; // Using Lucide icons
+import { Menu, ChevronLeft } from "lucide-react"; // Using Lucide icons
 import { sections } from "./data/data";
 import { useIsMediumScreen } from "./useMedium";
 

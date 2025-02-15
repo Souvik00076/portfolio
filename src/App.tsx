@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Terminal, Github, Linkedin, Twitter } from "lucide-react";
+import { Terminal } from "lucide-react";
 import { sections } from "./data/data";
 import { GHP, GHS, LCP, LCS, LICP, LICS } from "./assets";
 import { HoverImage } from "./HoverImage";
@@ -106,7 +106,7 @@ function App() {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
           >
-            {Object.entries(sections).map(([key, section], index) => (
+            {Object.entries(sections).map(([key, section]) => (
               <motion.div
                 key={key}
                 className={`flex items-center space-x-2 p-2 cursor-pointer ${
